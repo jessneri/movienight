@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*cabeçalho*/
+
+.cabecalho {
+    background-color: #eee8ff;
+    min-height: 5em;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    padding: 0.3em 2em;
+}
+
+.cabecalho2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 3em;
+}
+
+.pesquisa {
+    min-width: 456px;
+    min-height: 56px;
+    background-color: #5b4e80;
+    color: #eee8ff;
+    border: none;
+    padding-left: 15px;
+    background-image: url("pics/icons8-pesquisar-64.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+    padding-right: 15px;
+    background-origin: content-box;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 2em;
+}
+
+.cabecalho button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: #5b4e80;
+    min-width: 100px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.cabecalho button>img {
+    max-height: 2em;
+    margin-right: 0.5em;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5b4e80;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.perfil>img {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-left: 0.8em;
+}
+
+
+/*corpo geral*/
+
+body {
+    background-color: #5b4e80;
+}
+
+.corpoGeral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0, 1;
+}
+
+.corpo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.corpo2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*banner*/
+
+.bannerDeCupom {
+    background-image: url(pics/group_4.png);
+    min-width: 940px;
+    min-height: 119px;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Quantico", sans-serif;
+    padding-left: 16px;
+    margin-top: 2.5em;
+    position: relative;
+}
+
+.cupom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.divCupom1 {
+    padding-right: 24px;
+    margin-left: 24px;
+}
+
+.divCupom2 {
+    padding-top: 0px;
+    margin-left: 24px;
+}
+
+.divCupom h1 {
+    font-size: 32px;
+}
+
+.divCupom h2 {
+    font-size: 18px;
+}
+
+.cupom img {
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.money {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+}
+
+
+/*top filmes*/
+
+.listagem {
+    color: #eee8ff;
+    margin-top: 40px;
+}
+
+.listagem h2 {
+    margin-bottom: 16px;
+}
+
+.filmes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.filmes li {
+    position: relative;
+    margin: 10px;
+}
+
+.filmes li .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filmes li .overlay .infoDeFilmes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+li .poster {
+    display: block;
+    max-width: 168px;
+    max-height: 301px;
+}
+
+.filmes li .overlay>img {
+    align-self: flex-start;
+}
+
+.avaliacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fbcd6e;
+    font-size: 12px;
+}
+
+.avaliacao img {
+    margin-right: 5px;
+}
+
+.filmes li .overlay h3 {
+    margin: 0;
+}
+
+.filmes li .overlay button {
+    background-color: #eee8ff;
+    color: #140d42;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*botões*/
+
+.botoesDosGenero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botoesDosGenero button {
+    background: none;
+    border: 2px solid #f2c2cb;
+    color: #f2c2cb;
+    min-width: 168px;
+    min-height: 38px;
+    text-align: center;
+}
+
+.botoesDosGenero button:hover {
+    color: #f2c2cb;
+    border: 2px solid#F2C2CB;
+    background: rgba(225, 131, 200, 0.2);
+}
+
+.botoesDosGenero button:focus {
+    background: none;
+    border: 2px solid#1B1159;
+    color: #1b1159;
+    min-width: 168px;
+    min-height: 38px;
+    text-align: center;
+}
