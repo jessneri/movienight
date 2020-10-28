@@ -1,107 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pagPrincipal.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>Movie Night</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="cabecalho">
-        <div class="cabecalho2">
-            <img class="logo" src="pics/movie_night.png" />
-            <input class="pesquisa" type="text" placeholder="Pesquisar filmes..." />
-            <button>
+      <div class="cabecalho2">
+        <img class="logo" src="pics/movie_night.png" />
+        <input class="pesquisa" type="text" placeholder="Pesquisar filmes..." />
+        <button>
           <img src="pics/Bookmark.png" />
           <p>Favoritos</p>
         </button>
-            <button>
+        <button>
           <img src="pics/Discount.png" />
           <p>Promoção</p>
         </button>
-            <div class="perfil">
-                <p class="nomeDoPerfil">Bem vindo gatinho</p>
-                <img src="pics/images.jpg" />
-            </div>
+        <div class="perfil">
+          <p class="nomeDoPerfil">Bem vindo gatinho</p>
+          <img src="pics/images.jpg" />
         </div>
+      </div>
     </div>
 
     <div class="corpoGeral">
-        <div class="corpo">
-            <div class="corpo2">
-                <div class="bannerDeCupom">
-                    <div class="divCupom1">
-                        <h1>APROVEITE AGORA</h1>
-                        <div class="cupom">
-                            <img src="pics/ICON.png" />
-                            <p>CUPOM: <span class="textoCupom">htmlnaoelinguagem</span></p>
-                        </div>
-                    </div>
-                    <div class="divCupom2">
-                        <h2>FINALIZA EM:</h2>
-                        <div class="cupom">
-                            <img src="pics/ICON1.png" />
-                            <p class="tempoDoCupom">00:05:00</p>
-                        </div>
-                    </div>
-                    <img class="money" src="pics/money.png" />
-                </div>
-                <div class="listagem">
-                    <h2>Top Filmes</h2>
-                    <ul class="filmes">
-                        <li>
-                            <img class="poster" src="coringa.jpg" />
-                            <div class="overlay">
-                                <img src="pics/Star_2.png" />
-                                <div class="infoDeFilmes">
-                                    <h3>Coringa</h3>
-                                    <div class="avaliacao">
-                                        <img src="pics/Star_1.png" /> 8.8
-                                    </div>
-                                </div>
-                                <button>
-                    <span>Sacola</span>
-                    <span class="preco">R$ <span>5,00</span></span>
-                  </button>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="botoes">
-                        <div class="botoesDosGenero">
-                            <button class="btTodos">Todos</button>
-                            <button class="btAcao">Ação</button>
-                            <button class="btRomance">Romance</button>
-                            <button class="btFiccao">Ficção Científica</button>
-                            <button class="btTerror">Terror</button>
-                        </div>
-                    </div>
-
-                    <ul class="filmes">
-                        <li>
-                            <img class="poster" src="coringa.jpg" />
-                            <div class="overlay">
-                                <img src="pics/Star_2.png" />
-                                <div class="infoDeFilmes">
-                                    <h3>Coringa</h3>
-                                    <div class="avaliacao">
-                                        <img src="pics/Star_1.png" /> 8.8
-                                    </div>
-                                </div>
-                                <button>
-                    <span>Sacola</span>
-                    <span class="preco">R$ <span>5,00</span></span>
-                  </button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+      <div class="corpo">
+        <div class="corpo2">
+          <div class="bannerDeCupom">
+            <div class="divCupom1">
+              <h1>APROVEITE AGORA</h1>
+              <div class="cupom">
+                <img src="pics/ICON.png" />
+                <p>CUPOM: <span class="textoCupom">htmlnaoelinguagem</span></p>
+              </div>
             </div>
-        </div>
-    </div>
-</body>
+            <div class="divCupom2">
+              <h2>FINALIZA EM:</h2>
+              <div class="cupom">
+                <img src="pics/ICON1.png" />
+                <p class="tempoDoCupom">00:05:00</p>
+              </div>
+            </div>
+            <img class="money" src="pics/money.png" />
+          </div>
+          <div class="listagem">
+            <div class="listagem top">
+              <h2>Top Filmes</h2>
+              <ul class="filmes"></ul>
+            </div>
+            <div class="listagem geral">
+              <div class="botoes">
+                <div class="botoesDosGenero">
+                  <button class="btTodos">Todos</button>
+                  <button class="btAcao">Ação</button>
+                  <button class="btRomance">Romance</button>
+                  <button class="btFiccao">Ficção Científica</button>
+                  <button class="btTerror">Terror</button>
+                </div>
+              </div>
 
+              <ul class="filmes"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="sacola">
+          <div class="cabecalho-sacola">
+            <img class="sacolinha" src="pics/icons8-sacola-de-compras-48.png" />
+            <h2>Sacola</h2>
+          </div>
+          <div class="conteudo-sacola">
+            <div class="sacola-vazia">
+              <div class="titulo">Sua sacola está vazia</div>
+              <div class="subtitulo">Adicione filmes agora</div>
+              <img class="carrinhovazio" src="pics/carrinhovazio.png" />
+            </div>
+            <label class="input-cupom">
+              <span>Insira seu cupom:</span>
+              <div>
+                <input placeholder="Cupom de desconto" />
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="pagPrincipal.js"></script>
+  </body>
 </html>
