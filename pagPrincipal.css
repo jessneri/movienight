@@ -166,7 +166,7 @@ body {
 
 .listagem {
   color: #eee8ff;
-  margin-top: 40px;
+  margin-top: 1.5em;
   flex-wrap: wrap;
   max-width: 960px;
   display: flex;
@@ -437,4 +437,8 @@ li .poster {
   width: 100%;
   color: white;
   font-weight: bold;
+}
+.confirmar span {
+  display: flex;
+  flex-direction: row;
 }
