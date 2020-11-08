@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /*cabeçalho*/
 
 .cabecalho {
@@ -288,11 +292,15 @@ li .poster {
 
 /*sacola*/
 .sacola {
-  flex: 0 1 auto;
+  flex: 0 1 312px;
   margin-left: 24px;
+  margin-top: 2.5em;
+  color: white;
 }
 .carrinhovazio {
   max-width: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .cabecalho-sacola {
   background-color: #a785ed;
@@ -321,4 +329,112 @@ li .poster {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.input-cupom {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: white;
+}
+
+.input-cupom input {
+  display: flex;
+  min-width: 310px;
+  min-height: 40px;
+  margin-top: 3px;
+  background-color: #3e3557;
+  color: #fdfdfd;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: url("pics/icons8-bilhete-48.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30px;
+  background-origin: content-box;
+}
+
+.itens-sacola {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.itens-sacola li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.itens-sacola li > img {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.itens-sacola .titulo {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.adicionar {
+  background-color: #3e3557;
+  color: #6fcf97;
+  font-size: 22px;
+  border: none;
+  max-height: 26px;
+  min-width: 26px;
+  text-align: center;
+}
+
+.quantidade {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.remover {
+  background-color: #3e3557;
+  color: #ff7366;
+  font-size: 20px;
+  border: none;
+  max-height: 26px;
+  min-width: 26px;
+  text-align: center;
+}
+
+.remover2 {
+  background-color: #3e3557;
+  border: none;
+  max-height: 26px;
+  min-width: 26px;
+  text-align: center;
+}
+.remover2 img {
+  height: 22px;
+  padding-top: 3px;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.conteudo-sacola > button {
+  background-color: #e25ebf;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
 }
