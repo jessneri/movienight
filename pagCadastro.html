@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | Movie Night</title>
+    <link rel="stylesheet" href="pagCadastro.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Quantico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="cabecalho">
+      <div class="cabecalho2">
+        <img class="logo" src="pics/movie_night.png" />
+        <input class="pesquisa" type="text" placeholder="Pesquisar filmes..." />
+        <button>
+          <img src="pics/Bookmark.png" />
+          <p>Favoritos</p>
+        </button>
+        <button>
+          <img src="pics/Discount.png" />
+          <p>Promoção</p>
+        </button>
+        <div class="perfil">
+          <p class="nomeDoPerfil">Bem vindo gatinho</p>
+          <img src="pics/images.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="cadastro">
+      <div class="infoPessoais">
+        <div class="infoIniciais">
+          <h2>Informações Iniciais</h2>
+          <div class="linha1">
+            <div class="divInput">
+              <span>Insira seu nome completo</span>
+              <input type="text" placeholder="Ex: Matheus Vinicius" />
+            </div>
+            <div class="divInput">
+              <span>Insira seu e-mail</span>
+              <input type="email" placeholder="exemplo@exemplo.com" />
+            </div>
+          </div>
+          <div class="divInput">
+            <span>Telefone</span>
+            <input type="tel" placeholder="+55 (00) 00000-0000" />
+          </div>
+        </div>
+        <div class="infoIniciais">
+          <h2>Informações de Endereço</h2>
+          <div class="linha1">
+            <div class="divInput">
+              <span>CEP</span>
+              <input type="text" placeholder="00000-000" />
+            </div>
+            <div class="divInput">
+              <span>País</span>
+              <input type="text" placeholder="Ex: Brasil" />
+            </div>
+          </div>
+          <div class="linha1">
+            <div class="divInput">
+              <span>Cidade</span>
+              <input type="text" placeholder="Ex.: Salvador" />
+            </div>
+            <div class="divInput">
+              <span>Bairro</span>
+              <input type="text" placeholder="Ex: Rio Vermelho" />
+            </div>
+          </div>
+          <div class="divInput">
+            <span>Número</span>
+            <input type="text" placeholder="Ex: 00" />
+          </div>
+        </div>
+        <div class="infoIniciais">
+          <h2>Informações de Pagamento</h2>
+          <div class="linha1">
+            <div class="divInput">
+              <span>Número do cartão</span>
+              <input type="number" placeholder="0000 0000 0000 0000" />
+            </div>
+            <div class="divInput">
+              <span>Nome do cartão</span>
+              <input type="text" placeholder="Ex: MATHEUS VINICIUS" />
+            </div>
+          </div>
+          <div class="linha1">
+            <div class="divInput">
+              <span>Data de Expiração</span>
+              <input type="text" placeholder="DD/MM/YYYY" />
+            </div>
+            <div class="divInput">
+              <span>CVV</span>
+              <input type="text" placeholder="000" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sacolaComPedido">
+        <div class="sacola">
+          <div class="cabecalho-sacola">
+            <img class="sacolinha" src="pics/icons8-sacola-de-compras-48.png" />
+            <h2>Resumo da Sacola</h2>
+          </div>
+          <div class="conteudo-sacola">
+            <ul class="itens-sacola"></ul>
+
+            <label class="input-cupom">
+              <span>Insira seu cupom:</span>
+              <div>
+                <input placeholder="Cupom de desconto" />
+              </div>
+            </label>
+
+            <button
+              class="confirmar"
+              onClick="location.href = 'pagSucesso.html';"
+            >
+              <span>Confirme seus dados</span>
+              <span>R$&nbsp;<span class="preco"></span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="pagCadastro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/*cabeçalho*/
+
+.cabecalho {
+  background-color: #eee8ff;
+  min-height: 5em;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  padding: 0.3em 2em;
+  flex: 0 1 auto;
+}
+
+.cabecalho2 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 3em;
+}
+
+.pesquisa {
+  min-width: 456px;
+  min-height: 56px;
+  background-color: #5b4e80;
+  color: #eee8ff;
+  border: none;
+  padding-left: 15px;
+  background-image: url("pics/icons8-pesquisar-64.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30px;
+  padding-right: 15px;
+  background-origin: content-box;
+  margin-left: 2em;
+  margin-right: 2em;
+  border-radius: 2em;
+  outline: none;
+}
+
+.cabecalho button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  color: #5b4e80;
+  min-width: 100px;
+  margin-left: 2em;
+  margin-right: 2em;
+  outline: none;
+}
+
+.cabecalho button > img {
+  max-height: 2em;
+  margin-right: 0.5em;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5b4e80;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+.perfil > img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-left: 0.8em;
+}
+
+/*mensagem de sucesso*/
+
+body {
+  background-color: #5b4e80;
+}
+
+.corpo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.sucesso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 784px;
+  min-height: 443px;
+  background-color: #3e3557;
+  color: #e8e8e8;
+  margin-top: 100px;
+}
+
+.sucesso img {
+  max-height: 82px;
+  max-width: 82px;
+}
+
+.sucesso h1 {
+  margin-bottom: 0px;
+}
+
+.sucesso button {
+  background-color: #eee8ff;
+  border: none;
+  min-width: 456px;
+  min-height: 56px;
+  color: #140d42;
+  margin-top: 40px;
+}
+
+.sucesso a {
+  color: white;
+  text-decoration: none;
+}
