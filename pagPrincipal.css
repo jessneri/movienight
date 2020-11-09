@@ -47,6 +47,7 @@
   margin-left: 2em;
   margin-right: 2em;
   border-radius: 2em;
+  outline: none;
 }
 
 .cabecalho button {
@@ -60,6 +61,7 @@
   min-width: 100px;
   margin-left: 2em;
   margin-right: 2em;
+  outline: none;
 }
 
 .cabecalho button > img {
@@ -250,6 +252,7 @@ li .poster {
   padding: 6px;
   display: flex;
   justify-content: space-between;
+  outline: none;
 }
 
 .preco {
@@ -259,35 +262,39 @@ li .poster {
 
 /*botões*/
 
-.botoesDosGenero {
+.botoesDosGeneros {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 50px;
+  max-width: 960px;
 }
 
-.botoesDosGenero button {
+.botoesDosGeneros button {
   background: none;
-  border: 2px solid #f2c2cb;
-  color: #f2c2cb;
+  border: 2px solid #3e3557;
+  color: #3e3557;
   min-width: 168px;
   min-height: 38px;
   text-align: center;
+  margin-top: 15px;
 }
 
-.botoesDosGenero button:hover {
+.botoesDosGeneros button:hover {
   color: #f2c2cb;
   border: 2px solid#F2C2CB;
   background: rgba(225, 131, 200, 0.2);
 }
 
-.botoesDosGenero button:focus {
-  background: none;
-  border: 2px solid#1B1159;
-  color: #1b1159;
+.botoesDosGeneros button:focus {
+  border: 2px solid#f2c2cb;
+  color: #f2c2cb;
+  background: rgba(225, 131, 200, 0.2);
   min-width: 168px;
   min-height: 38px;
   text-align: center;
+  outline: none;
 }
 
 /*sacola*/
@@ -359,6 +366,7 @@ li .poster {
   background-position: right;
   background-size: 30px;
   background-origin: content-box;
+  outline: none;
 }
 
 .itens-sacola {
@@ -390,9 +398,11 @@ li .poster {
   color: #6fcf97;
   font-size: 22px;
   border: none;
-  max-height: 26px;
-  min-width: 26px;
+  max-height: 30px;
+  min-width: 30px;
   text-align: center;
+  outline: none;
+  border-radius: 8px;
 }
 
 .quantidade {
@@ -405,21 +415,14 @@ li .poster {
   color: #ff7366;
   font-size: 20px;
   border: none;
-  max-height: 26px;
-  min-width: 26px;
+  max-height: 30px;
+  min-width: 30px;
   text-align: center;
+  outline: none;
+  border-radius: 8px;
 }
-
-.remover2 {
-  background-color: #3e3557;
-  border: none;
-  max-height: 26px;
-  min-width: 26px;
-  text-align: center;
-}
-.remover2 img {
-  height: 22px;
-  padding-top: 3px;
+.remover img {
+  padding-top: 2px;
 }
 
 .acoes {
@@ -437,6 +440,7 @@ li .poster {
   width: 100%;
   color: white;
   font-weight: bold;
+  outline: none;
 }
 .confirmar span {
   display: flex;

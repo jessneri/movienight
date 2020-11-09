@@ -1,6 +1,7 @@
 const CUPOM_DESCONTO = "HTMLNAOELINGUAGEM";
 
 function listagemDeFilmes(filmes, elemento) {
+  elemento.innerHTML = "";
   for (const filme of filmes) {
     const li = document.createElement("li");
     li.innerHTML = `
@@ -52,10 +53,10 @@ fetch(
   .then((respostaJson) => {
     const filmes = respostaJson.results;
 
-    const listagemGeralFIlmes = document.querySelector(
+    const listagemGeralFilmes = document.querySelector(
       ".listagem.geral .filmes"
     );
-    listagemDeFilmes(filmes, listagemGeralFIlmes);
+    listagemDeFilmes(filmes, listagemGeralFilmes);
 
     const listagemTopFIlmes = document.querySelector(".listagem.top .filmes");
     listagemDeFilmes(filmes.slice(0, 5), listagemTopFIlmes);
@@ -178,3 +179,48 @@ cupomPreenchido.addEventListener("input", () => {
   popularSacola();
 });
 cupomPreenchido.value = localStorage.getItem("cupom");
+
+const btTodos = document.querySelector(".botoesDosGeneros button:first-child");
+btTodos.addEventListener("click", () => {
+  fetch(
+    "https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?language=pt-BR"
+  )
+    .then((res) => res.json())
+    .then((respostaJson) => {
+      const filmes = respostaJson.results;
+
+      const listagemGeralFilmes = document.querySelector(
+        ".listagem.geral .filmes"
+      );
+      listagemDeFilmes(filmes, listagemGeralFilmes);
+    });
+});
+
+fetch(
+  "https://tmdb-proxy-workers.vhfmag.workers.dev/3/genre/movie/list?language=pt-BR"
+)
+  .then((res) => res.json())
+  .then((respostaJson) => {
+    const generos = respostaJson.genres;
+
+    const elementoFiltros = document.querySelector(".botoesDosGeneros");
+    for (const genero of generos.slice(0, 9)) {
+      const button = document.createElement("button");
+      button.innerText = genero.name;
+      elementoFiltros.append(button);
+
+      button.addEventListener("click", () => {
+        fetch(
+          `https://tmdb-proxy-workers.vhfmag.workers.dev/3/discover/movie?with_genres=${genero.id}&language=pt-BR`
+        )
+          .then((res) => res.json())
+          .then((respostaJson) => {
+            const filmes = respostaJson.results;
+            const listagemGeralFilmes = document.querySelector(
+              ".listagem.geral .filmes"
+            );
+            listagemDeFilmes(filmes, listagemGeralFilmes);
+          });
+      });
+    }
+  });
